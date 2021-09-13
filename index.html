@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 13 - Mesa</title>
+</head>
+<style>
+
+    body { font-family: Arial, Helvetica, sans-serif;
+        background-image: url(/aula13/mesa/background.jpg);
+        color: white; }
+    div { margin: 25px 0; }
+    .container{
+        width: 80%;
+        margin-left: 10%;
+        height: 550px;
+        padding: 20px 20px;
+        text-align: center;
+
+    }
+    .logo img {
+        width: 300px;
+        background-color: white;
+        border-radius: 10px;
+        
+    }
+
+
+</style>
+<body>
+
+    <section class="container">
+
+        <h1>Entre em contato</h1>
+
+        <div class="logo">
+            <img src="logo-DH.png">
+        </div>
+
+        <form action="/" method="POST">
+            <div>
+
+                <label for="nome">Nome</label>
+
+                <input type="text" name="nome" id="nome" placeholder="Seu nome">
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" placeholder="Seu e-mail principal">
+            </div>
+            <div>
+                <label for="story">Mensagem</label><br>
+                <textarea id="mensagem" name="mensagem" rows="5" cols="33">Digite sua mensagem...</textarea>
+            </div>
+            <div>
+                <label for="genero">Genero</label>
+                <select name="genero" id="genero">
+                    <option value="outros" selected>Prefiro não informar</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select>
+            </div>
+            <div>
+                <button type="reset">Limpar</button>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+
+    </section>
+
+</body>
+</html>
